@@ -78,9 +78,6 @@
 %\renewcommand{\rmdefault}{ptm}\selectfont
 
 
-
-
-
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
 
@@ -103,9 +100,6 @@
 % \ifCLASSINFOpdf conditional that works the same way.
 % When switching from latex to pdflatex and vice-versa, the compiler may
 % have to be run twice to clear warning/error messages.
-
-
-
 
 
 
@@ -598,7 +592,7 @@ GA, 30332.\protect\\
 % journals, the available text space is not reduced by their presence.
 % If you want to put a publisher's ID mark on the page you can do it like
 % this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+\IEEEpubid{ \input{message.txt} \copyright~2008 IEEE}
 % or like this to get the Computer Society new two part style.
 %\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--0000/00/\$00.00~\copyright~2015 IEEE}%
 %\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer Society\hfill}}
@@ -646,6 +640,7 @@ IEEE, Meta-Bisturbile, Hamilton-Loops, VX, Late-Transductance.
 
 
 % For peer review papers, you can put extra information on the cover
+% page as needed:
 % page as needed:
 % \ifCLASSOPTIONpeerreview
 % \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
@@ -782,7 +777,7 @@ a sequence of pulses and detects echos.
 \begin{figure}%                 use [hb] only if necceccary!
     \centering
     \includegraphics[width=6cm]{qrcode.jpg}
-    \caption{2-dimensional codes like this can be used as secure activation prompts for defence grids.}
+    \caption{2-dimensional "Quick Response" codes like this can be worn by military personnel in order to deactivate optical-based target acquisition systems.}
     \label{fig:2}
 \end{figure}
 
