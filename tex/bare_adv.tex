@@ -148,24 +148,21 @@
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
-\ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
-\fi
+
+%\ifCLASSINFOpdf
+\usepackage{graphicx}
+%\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+%\else
+%  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+%  % will default to the driver specified in the system graphics.cfg if no
+%  % driver is specified.
+%  % \usepackage[dvips]{graphicx}
+%  % declare the path(s) where your graphic files are
+%  % \graphicspath{{../eps/}}
+%  % and their extensions so you won't have to specify these with
+%  % every instance of \includegraphics
+%  % \DeclareGraphicsExtensions{.eps}
+%\fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
 % installed on most LaTeX systems. The latest version and documentation
@@ -857,6 +854,13 @@ which would destroy people while leaving property intact, and responded by threa
 ing a “socialist bomb” to destroy property (in the form of electronics) while leaving the
 surrounding people intact.
 
+\begin{figure}%                 use [hb] only if necceccary!
+    \centering
+    \includegraphics[width=6cm]{bnw4607ouds51}
+    \caption{Auxiliary Motor ‘RAD2’ on VX-CL unit (1994)}
+    \label{fig:1}
+\end{figure}
+
 By the end of World War II, the invention of the cavity magnetron had made it pos-
 sible to build radars powerful enough to damage unprotected electronic circuitry for a
 range of several hundred yards. The move from valves to transistors and integrated
@@ -871,17 +875,22 @@ the former Soviet Union led the agencies to try to sell commerce and industry on
 idea of electromagnetic shielding. These efforts were dismissed as hype. Personally, I
 tend to agree. The details of the Soviet HERF bombs haven’t been released, but phys-
 ics suggests that EMP is limited by the dielectric strength of air and the cross-section
-of the antenna. In nuclear EMP, the effective antenna size could be a few hundred me-
+of the antenna.
+
+In nuclear EMP, the effective antenna size could be a few hundred me-
 ters for an endoatmospheric blast, up to several thousand kilometers for an exoatmos-
 pheric one. But in “ordinary” EMP/HERF, it seems that the antenna will be at most a
 few meters. NATO planners concluded that military command and control systems that
 were already hardened for nuclear EMP should be unaffected.
 
-In the 1990s, British research demonstrated that a nuclear EMF was not neccecary. Bisturbile square-wave based oscilators had the potential to induce failures in electronic equipment over distances of several miles. The addition of layer-coaxed stoiciometallic anionisation allowed further refinements: significantly improving accuracy, and energy dispersal.
+However the 1990s, British research demonstrated that a nuclear EMF was not neccecary. Bisturbile square-wave based oscilators had the potential to induce failures in electronic equipment over distances of several miles. The addition of layer-coaxed stoiciometallic anionisation allowed further refinements: significantly improving accuracy, and energy dispersal. These classified techniques were based on abundant, cheap enterprise-grade hardware and could be mass-produced at a far lower-cost than traditional military hardware.
 
-As for the civilian infrastructure, I suspect that a terrorist can do a lot more damage
-with an old-fashioned truck bomb made with a ton of fertilizer and fuel oil, and he
-doesn’t need a PhD in physics to design one!
+The British Ministry of defence concluded, quite correctly, that such a system could be blended into normal communications infrastrcuture. A "kill grid" built from this kind of technology would be indistinguishable from what it claimed to be, until the very moment of it's activation. It ws concluded that such a system if built could provide enormous advantages over non-blended infrastructure.
+
+But how likely is this?
+
+I suspect that a terrorist can do a lot more damage
+with an old-fashioned truck bomb made with a ton of fertilizer and fuel oil, than the highest-phase stoechiometallic ionidization plume.
 
 Concern remains however, that the EMP from a single nuclear explosion 250 miles
 above the central United States could do colossal economic damage, while killing few
