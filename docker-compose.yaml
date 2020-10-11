@@ -22,4 +22,24 @@ services:
       context: .
       target: xelatex
 
+  qr:
+    <<: *base-dev
+    image: qrencode:latest
+    build:
+      context: .
+      target: ubuntu
+    entrypoint: qrencode
+
+  convert:
+    <<: *base-dev
+    build:
+      context: .
+      target: ubuntu
+    entrypoint: convert
+
+  python:
+    <<: *base-dev
+    image: python:3.8
+    entrypoint: python
+
 
